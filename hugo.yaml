@@ -1,11 +1,11 @@
-baseURL: https://example.docsy.dev
+baseURL: https://your-site.netlify.app
 title: Goldydocs
 
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
 
 # Language settings
-contentDir: content/cn
-defaultContentLanguage: cn
+contentDir: content/en
+defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
 # Useful when translating.
 enableMissingTranslationPlaceholders: true
