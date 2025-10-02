@@ -1,0 +1,167 @@
+
+# ==================== Hugo 核心 ====================
+
+/public/
+
+/resources/_gen/
+
+/assets/jsconfig.json
+
+.hugo_build.lock
+
+
+
+# ==================== 主题管理 ====================
+
+# 排除所有主题，只保留 Docsy 子模块
+
+/themes/*
+
+!/themes/README.md
+
+!/themes/docsy/
+
+
+
+# ==================== 依赖管理 ====================
+
+# Node.js
+
+node_modules/
+
+npm-debug.log*
+
+yarn-debug.log*
+
+yarn-error.log*
+
+package-lock.json
+
+yarn.lock
+
+
+
+# Go
+
+go.sum
+
+*.exe
+
+*.test
+
+*.prof
+
+
+
+# ==================== 环境配置 ====================
+
+.env
+
+*.env.local
+
+!.env.example
+
+
+
+# ==================== 系统文件 ====================
+
+.DS_Store
+
+.DS_Store?
+
+._*
+
+.Spotlight-V100
+
+.Trashes
+
+ehthumbs.db
+
+Thumbs.db
+
+desktop.ini
+
+
+
+# ==================== 编辑器 ====================
+
+# VS Code
+
+.vscode/
+
+!.vscode/settings.json
+
+!.vscode/tasks.json
+
+!.vscode/launch.json
+
+!.vscode/extensions.json
+
+*.code-workspace
+
+
+
+# IntelliJ
+
+.idea/
+
+*.iws
+
+*.iml
+
+*.ipr
+
+
+
+# Vim
+
+*.swp
+
+*.swo
+
+*~
+
+
+
+# ==================== 日志和缓存 ====================
+
+*.log
+
+logs/
+
+.cache/
+
+.parcel-cache/
+
+
+
+# ==================== 临时文件 ====================
+
+tmp/
+
+temp/
+
+*.tmp
+
+*.temp
+
+
+
+# ==================== 测试文件 ====================
+
+_test/
+
+.coverage
+
+*.cover
+
+*.mode1v3
+
+
+
+# ==================== Netlify CMS 本地开发 ====================
+
+.local/
+
+.netlify/
+
