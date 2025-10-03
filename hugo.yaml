@@ -280,3 +280,36 @@ menu:
 
       weight: 4
 
+
+
+
+# 菜单配置 - 只在这里定义一次
+
+menu:
+
+  main:
+
+    - name: "首页"
+
+      url: /
+
+      weight: 1
+
+    - name: "博客"
+
+      url: /blog/
+
+      weight: 2
+
+    - name: "文档"
+
+      url: /docs/
+
+      weight: 3
+
+    - name: "社区"
+
+      url: /community/
+
+      weight: 4
+
