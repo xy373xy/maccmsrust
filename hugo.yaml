@@ -316,11 +316,16 @@ menu:
 
 
 
+
+
+
+
+
 params:
 
-  navbar_logo: true
+  ui:
 
-  navbar_logo_src: "images/logo.svg"
+    navbar_logo: false
 
-  navbar_logo_width: 40
+  navbar_display_title: true
 
