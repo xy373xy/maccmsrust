@@ -316,8 +316,9 @@ menu:
 params:
   ui:
     navbar_logo: false
+    navbar_translucent_over_cover_disable: false
   navbar_display_title: true
-  navbar_title: "🚀 MacCMS Rust"
+  navbar_title: "MacCMS Rust"
 
 
 
