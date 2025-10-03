@@ -190,3 +190,20 @@ params:
 
     breadcrumb_disable: false
 
+
+
+
+# Docsy 主题配置
+
+params:
+
+  ui:
+
+    navbar_logo: true
+
+    navbar_display_title: true
+
+    breadcrumb_disable: false
+
+    navbar_translucent_over_cover_disable: false
+

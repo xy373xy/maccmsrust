@@ -13,43 +13,89 @@ menu:
 
 
 
-# 欢迎来到 MacCMS Rust 文档站！
++++
+
+# 首页内容配置
+
++++
 
 
 
-这是一个基于 Hugo 和 Docsy 主题构建的技术文档网站。
+{{< blocks/cover title="MacCMS Rust 文档" image_anchor="top" height="full" color="primary" >}}
+
+<div class="mx-auto">
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="/blog/">
+
+查看博客 <i class="fas fa-arrow-alt-circle-right ml-2"></i>
+
+</a>
+
+<a class="btn btn-lg btn-secondary mr-3 mb-4" href="/docs/">
+
+学习文档 <i class="fas fa-book ml-2"></i>
+
+</a>
+
+<p class="lead mt-5">基于 Hugo 和 Docsy 构建的现代化技术文档平台</p>
+
+</div>
+
+{{< /blocks/cover >}}
 
 
 
-## 最新文章
+{{< blocks/section color="white" >}}
+
+{{% blocks/feature icon="fa-lightbulb" title="技术博客" %}}
+
+分享技术经验和最佳实践，记录学习历程。
+
+{{% /blocks/feature %}}
 
 
 
-<ul>
+{{% blocks/feature icon="fa-book" title="项目文档" url="/docs/" %}}
 
-{{ range first 5 (where .Site.RegularPages "Section" "blog") }}
+完整的项目文档和 API 参考指南。
 
-  <li>
-
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a> 
-
-    - <small>{{ .Date.Format "2006-01-02" }}</small>
-
-  </li>
-
-{{ end }}
-
-</ul>
+{{% /blocks/feature %}}
 
 
 
-## 快速链接
+{{% blocks/feature icon="fa-users" title="社区交流" url="/community/" %}}
+
+与技术爱好者交流学习，共同进步。
+
+{{% /blocks/feature %}}
+
+{{< /blocks/section >}}
 
 
 
-- [技术博客](/blog/) - 查看所有技术文章
+{{< blocks/section color="dark" >}}
 
-- [项目文档](/docs/) - 了解项目详情  
+{{% blocks/feature icon="fa-github" title="欢迎贡献" %}}
 
-- [社区交流](/community/) - 参与讨论
+项目开源在 GitHub，欢迎提交问题和 Pull Request。
+
+{{% /blocks/feature %}}
+
+
+
+{{% blocks/feature icon="fa-code" title="现代技术栈" %}}
+
+基于 Hugo, Docsy, Netlify CMS 等现代技术构建。
+
+{{% /blocks/feature %}}
+
+
+
+{{% blocks/feature icon="fa-rocket" title="快速部署" %}}
+
+自动化部署流程，内容更新即时生效。
+
+{{% /blocks/feature %}}
+
+{{< /blocks/section >}}
 

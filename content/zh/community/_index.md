@@ -1,7 +1,7 @@
 
 ---
 
-title: "社区"
+title: "社区交流"
 
 menu:
 
@@ -9,7 +9,11 @@ menu:
 
     weight: 4
 
+linkTitle: "社区"
+
 ---
 
-社区交流。
+
+
+技术社区讨论和交流。
 
