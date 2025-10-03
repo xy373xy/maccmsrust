@@ -313,19 +313,12 @@ menu:
 
       weight: 4
 
-
-
-
-
-
-
-
-
 params:
-
   ui:
-
     navbar_logo: false
-
   navbar_display_title: true
+  navbar_title: "🚀 MacCMS Rust"
+
+
+
 
