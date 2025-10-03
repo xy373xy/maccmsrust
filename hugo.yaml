@@ -313,3 +313,14 @@ menu:
 
       weight: 4
 
+
+
+
+params:
+
+  navbar_logo: true
+
+  navbar_logo_src: "images/logo.svg"
+
+  navbar_logo_width: 40
+
