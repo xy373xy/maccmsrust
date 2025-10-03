@@ -7,23 +7,37 @@ menu:
 
   main:
 
-    - name: "首页"
+    - identifier: "home"
 
-      weight: 1
+      name: "首页"
 
-    - name: "博客"
+      url: /
 
-      weight: 2
+      weight: 10
+
+    - identifier: "blog"
+
+      name: "博客"
 
       url: /blog/
 
-    - name: "文档"
+      weight: 20
 
-      weight: 3
+    - identifier: "docs"
 
-    - name: "社区"
+      name: "文档"
 
-      weight: 4
+      url: /docs/
+
+      weight: 30
+
+    - identifier: "community"
+
+      name: "社区"
+
+      url: /community/
+
+      weight: 40
 
 ---
 

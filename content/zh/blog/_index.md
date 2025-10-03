@@ -3,13 +3,15 @@
 
 title: "技术博客"
 
-linkTitle: "博客"
-
 menu:
 
   main:
 
+    name: "博客"
+
     weight: 20
+
+    parent: ""
 
 cascade:
 
