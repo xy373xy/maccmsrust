@@ -1,13 +1,23 @@
----
-title: Tutorials
-description: Show your user how to work through some end to end examples.
-date: 2017-01-04
-weight: 8
+
 ---
 
-{{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
-{{% /pageinfo %}}
+title: "技术博客"
 
-Tutorials are **complete worked examples** made up of **multiple tasks** that guide the user through a relatively simple but realistic scenario: building an application that uses some of your project’s features, for example. If you have already created some Examples for your project you can base Tutorials on them. This section is **optional**. However, remember that although you may not need this section at first, having tutorials can be useful to help your users engage with your example code, especially if there are aspects that need more explanation than you can easily provide in code comments.
+linkTitle: "博客"
+
+menu:
+
+  main:
+
+    weight: 20
+
+cascade:
+
+  - type: "blog"
+
+---
+
+
+
+技术文章和教程集合。
 
