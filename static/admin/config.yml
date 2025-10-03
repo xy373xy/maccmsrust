@@ -8,7 +8,7 @@ public_folder: "/images"
 collections:
   - name: "posts"
     label: "文章"
-    folder: "content/zh/blog"  # 确保是这个路径
+    folder: "content/zh/blog"  # 修正路径
     create: true
     slug: "{{slug}}"
     fields:

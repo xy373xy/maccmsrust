@@ -1,8 +1,23 @@
----
-title: Blog
-menu: {main: {weight: 30}}
+
 ---
 
-This is the **blog** section. It has two categories: News and Releases.
+title: "技术博客"
 
-Files in these directories will be listed in reverse chronological order.
+linkTitle: "博客"
+
+menu:
+
+  main:
+
+    weight: 20
+
+cascade:
+
+  - type: "blog"
+
+---
+
+
+
+欢迎阅读我们的技术博客文章。
+
