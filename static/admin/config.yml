@@ -19,7 +19,7 @@ collections:
 
     label: "文章"
 
-    folder: "content/zh/blog"  # 统一使用 blog 目录
+    folder: "content/zh/blog"
 
     create: true
 
