@@ -1,325 +1,179 @@
+
 baseURL: https://maccmsrust.netlify.app
+
 title: MacCMS Rust 文档
 
-# cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
 
-# 语言设置 - 修改为中文
+
+# 语言设置
+
 contentDir: content/zh
+
 defaultContentLanguage: zh
+
 defaultContentLanguageInSubdir: false
-# 翻译时有用
+
 enableMissingTranslationPlaceholders: true
+
+
 
 enableRobotsTXT: true
 
-# 为 .Lastmod 等提供值
 enableGitInfo: true
 
-# 取消注释以禁用 Docsy 中的分类法
-# disableKinds: [taxonomy]
 
-# 可以添加自己的分类法
+
 taxonomies:
+
   tag: tags
+
   category: categories
 
-# 代码高亮配置
+
+
 pygmentsCodeFences: true
+
 pygmentsUseClasses: false
-# 在 Hugo 中使用新的 Chroma Go 高亮器
+
 pygmentsUseClassic: false
-# pygmentsOptions: "linenos=table"
-# 参见 https://help.farbox.com/pygments.html
+
 pygmentsStyle: tango
 
-# 配置每个部分的 URL 外观
-permalinks:
-  posts: /posts/:slug/
 
-# 图片处理配置
+
+permalinks:
+
+  blog: /:section/:year/:month/:day/:slug/
+
+
+
 imaging:
+
   resampleFilter: CatmullRom
+
   quality: 75
+
   anchor: smart
 
-# 语言配置 - 修改为中文为主语言
+
+
+# 语言配置
+
 languages:
+
   zh:
+
     languageName: 中文
+
     title: MacCMS Rust 文档
+
     weight: 1
+
     params:
+
       description: MacCMS Rust 技术文档网站
+
       time_format_default: 2006-01-02
+
       time_format_blog: 2006-01-02
+
   en:
+
     languageName: English
+
     title: MacCMS Rust Docs
+
     weight: 2
+
     params:
+
       description: A Docsy example site
-  # cSpell:disable
-  'no':
-    languageName: Norsk
-    contentDir: content/no
-    title: Gulldoks
-    params:
-      description: Docsy er operativsystem for skyen
-      time_format_default: 02.01.2006
-      time_format_blog: 02.01.2006
-  fa:
-    languageDirection: rtl
-    languageName: "فارسی (Persian)"
-    contentDir: content/fa
-    title: "اسناد گلدی"
-    params:
-      description: "یک نمونه برای پوسته داکسی"
-      time_format_default: 2006.01.02
-      time_format_blog: 2006.01.02
-# 简单的 UI 配置（避免复杂配置导致错误）
-params:
-  ui:
-    navbar_logo: true
-  # cSpell:enable
 
-markup:
-  goldmark:
-    parser:
-      attribute:
-        block: true
-    renderer:
-      unsafe: true
-  highlight:
-    # 完整样式列表参见 https://xyproto.github.io/splash/docs/all.html
-    style: tango
-    # 如果希望为未指定语言的代码块使用所选高亮样式，请取消注释
-    # guessSyntax: true
 
-# 以下都是站点参数
 
-# 如果不想启用"打印整个部分"链接，请注释掉
-outputs:
-  section: [HTML, print, RSS]
+# 统一的 params 配置（只有一个 params 部分）
 
 params:
-  # 分类/栏目配置
-  taxonomy:
-    # 设置 taxonomyCloud = [] 以隐藏分类云
-    taxonomyCloud: [tags, categories]
 
-    # 如果使用，必须与 taxonomyCloud 长度相同
-    taxonomyCloudTitle: [标签云, 分类]
+  # Logo 配置
 
-    # 设置 taxonomyPageHeader = [] 以隐藏页面标题中的分类法
-    taxonomyPageHeader: [tags, categories]
+  navbar_logo: true
 
-  # 定义分类/栏目
-  categories:
-    - name: "技术教程"
-      description: "技术学习和教程文章"
-      weight: 1
-    - name: "开发笔记"
-      description: "开发过程中的经验和笔记"
-      weight: 2
-    - name: "项目更新"
-      description: "项目进展和版本更新"
-      weight: 3
-    - name: "问题解决"
-      description: "技术问题解决方案"
-      weight: 4
-
-  privacy_policy: https://policies.google.com/privacy
-
-  # 如果页面未设置，第一个将被选为 Twitter 卡片图像
-  # images: [images/project-illustration.png]
-
-  # 如果导航栏有版本选择器以访问旧版本站点，则显示菜单标题
-  # 只有设置了至少一个 [params.versions] 时，此菜单才会出现
-  version_menu: 版本发布
-
-  # 在 "version-banner" 部分中使用的标志，用于决定是否在每个页面上显示指示这是文档存档版本的横幅
-  # 如果要显示横幅，请将此标志设置为 "true"
-  archived_version: false
-
-  # 此文档集所代表的文档版本号
-  # 在 "version-banner" 部分中使用，以显示当前文档集的版本号
-  version: 1.0
-
-  # 最新文档版本的链接。在 "version-banner" 部分中使用，将人们指向主文档站点
-  url_latest_version: https://maccmsrust.netlify.app
-
-  # 仓库配置（用于页面内链接以打开问题和建议更改的 URL）
-  github_repo: https://github.com/xy373xy/maccmsrust
-
-  # 可选的相关项目仓库链接。例如，您的产品代码所在的兄弟仓库
-  github_project_repo: https://github.com/xy373xy/maccmsrust
-
-  # 如果内容目录不在仓库的根目录中，请在此处指定值
-  # github_subdir: ""
-
-  # 如果您的 GitHub 仓库默认分支不是 "main"，请取消注释此项
-  # 或者如果要引用 GitHub 链接中的另一个分支，请指定新值
-  github_branch: main
-
-  # Google 自定义搜索引擎 ID。删除或注释掉以禁用搜索
-  # gcs_engine_id: d72aa9b2712488cc3
-
-  # 启用 Lunr.js 离线搜索
-  offlineSearch: true
-
-  # 使用 Prism 在代码块上启用语法高亮和复制按钮
-  prism_syntax_highlighting: false
-
-  copyright:
-    authors: MacCMS Rust 文档作者 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
-    from_year: 2024
-
-  # 用户界面配置
-  ui:
-    # 设置为 true 以禁用面包屑导航
-    breadcrumb_disable: false
-    # 如果不想在顶部导航栏中显示徽标 (/assets/icons/logo.svg)，请设置为 false
-    navbar_logo: true
-    # 如果在 `block/cover` 上时不希望顶部导航栏是半透明的（如主页上），请设置为 true
-    navbar_translucent_over_cover_disable: false
-    # 启用以紧凑状态显示侧边栏菜单
-    sidebar_menu_compact: false
-    # 设置为 true 以隐藏侧边栏搜索框（如果启用了搜索，仍将显示顶部导航搜索框）
-    sidebar_search_disable: false
-
-    # 在每个文档底部添加标题为"反馈"的 H2 部分。响应将作为事件发送到 Google Analytics
-    # 此功能依赖于 [services.googleAnalytics]，如果未设置 "services.googleAnalytics.id"，将被禁用
-    # 如果需要此功能，但偶尔需要从单个页面删除"反馈"部分，
-    # 请在页面的 front matter 中添加 "hide_feedback: true"
-    feedback:
-      enable: false
-      # 用户点击"是"（页面有帮助）或"否"（页面没有帮助）后看到的响应
-      'yes': >-
-        很高兴对您有帮助！请<a href="https://github.com/xy373xy/maccmsrust/issues/new">告诉我们如何改进</a>。
-      'no': >-
-        很抱歉没有帮助。请<a href="https://github.com/xy373xy/maccmsrust/issues/new">告诉我们如何改进</a>。
-
-    # 在每个文档顶部添加阅读时间
-    # 如果需要此功能，但偶尔需要从单个页面删除阅读时间，
-    # 请在页面的 front matter 中添加 "hide_readingtime: true"
-    readingtime:
-      enable: true
-
-  links:
-    # 最终用户相关链接。这些将显示在页脚左侧，如果有社区页面，也会显示在那里
-    user:
-      - name: 用户邮件列表
-        url: https://groups.google.com/g/maccmsrust
-        icon: fa fa-envelope
-        desc: 与其他用户讨论和获取帮助
-      - name: 技术博客
-        url: /posts/
-        icon: fas fa-blog
-        desc: 查看最新的技术文章和教程
-    # 开发人员相关链接。这些将显示在页脚右侧，如果有社区页面，也会显示在那里
-    developer:
-      - name: GitHub
-        url: https://github.com/xy373xy/maccmsrust
-        icon: fab fa-github
-        desc: 开发在这里进行！
-      - name: 文档
-        url: /
-        icon: fas fa-book
-        desc: 项目文档和API参考
-      - name: 问题反馈
-        url: https://github.com/xy373xy/maccmsrust/issues
-        icon: fas fa-bug
-        desc: 报告问题和建议功能
-
-module:
-  # 取消注释下一行以使用命名 Hugo 工作区中声明的本地 docsy 克隆来构建和服务：
-  # workspace: docsy.work
-  hugoVersion:
-    extended: true
-    min: 0.146.0
-  imports:
-    - path: github.com/google/docsy
-      disable: false
-
-
-# 菜单配置
-
-menu:
-
-  main:
-
-    - identifier: "home"
-
-      name: "首页"
-
-      url: /
-
-      weight: 1
-
-    - identifier: "blog"
-
-      name: "博客"
-
-      url: /blog/
-
-      weight: 2
-
-    - identifier: "docs"
-
-      name: "文档"
-
-      url: /docs/
-
-      weight: 3
-
-    - identifier: "community"
-
-      name: "社区"
-
-      url: /community/
-
-      weight: 4
-
-
-
-
-# 菜单配置 - 只在这里定义一次
-
-menu:
-
-  main:
-
-    - name: "首页"
-
-      url: /
-
-      weight: 1
-
-    - name: "博客"
-
-      url: /blog/
-
-      weight: 2
-
-    - name: "文档"
-
-      url: /docs/
-
-      weight: 3
-
-    - name: "社区"
-
-      url: /community/
-
-      weight: 4
-
-params:
-  ui:
-    navbar_logo: false
-    navbar_translucent_over_cover_disable: false
   navbar_display_title: true
+
   navbar_title: "MacCMS Rust"
 
+  
+
+  # UI 配置
+
+  ui:
+
+    navbar_logo: true
+
+    navbar_display_title: true
+
+    breadcrumb_disable: false
+
+    navbar_translucent_over_cover_disable: false
+
+    sidebar_menu_compact: false
+
+    sidebar_search_disable: false
 
 
+
+  # 分类配置
+
+  taxonomy:
+
+    taxonomyCloud: [tags, categories]
+
+    taxonomyCloudTitle: [标签云, 分类]
+
+    taxonomyPageHeader: [tags, categories]
+
+
+
+  categories:
+
+    - name: "技术教程"
+
+      description: "技术学习和教程文章"
+
+      weight: 1
+
+    - name: "开发笔记"
+
+      description: "开发过程中的经验和笔记"
+
+      weight: 2
+
+    - name: "项目更新"
+
+      description: "项目进展和版本更新"
+
+      weight: 3
+
+    - name: "问题解决"
+
+      description: "技术问题解决方案"
+
+      weight: 4
+
+
+
+module:
+
+  hugoVersion:
+
+    extended: true
+
+    min: 0.146.0
+
+  imports:
+
+    - path: github.com/google/docsy
+
+      disable: false
 
