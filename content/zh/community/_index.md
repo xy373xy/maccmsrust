@@ -3,15 +3,15 @@
 
 title: "社区"
 
+linkTitle: "社区"
+
 menu:
 
   main:
 
-    name: "社区"
-
-    weight: 40
+    weight: 4
 
 ---
 
-社区交流和支持。
+社区交流。
 
