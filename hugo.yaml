@@ -34,7 +34,7 @@ pygmentsStyle: tango
 
 # 配置每个部分的 URL 外观
 permalinks:
-  blog: /:section/:year/:month/:day/:slug/
+  posts: /posts/:slug/
 
 # 图片处理配置
 imaging:
