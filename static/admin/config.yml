@@ -1,33 +1,67 @@
+
 backend:
+
   name: git-gateway
+
   branch: main
 
+
+
 media_folder: "static/images"
+
 public_folder: "/images"
 
+
+
 collections:
+
   - name: "posts"
+
     label: "文章"
-    folder: "content/zh/blog"  # 修正路径
+
+    folder: "content/zh/blog"  # 统一使用 blog 目录
+
     create: true
+
     slug: "{{slug}}"
+
     fields:
+
       - {label: "标题", name: "title", widget: "string"}
+
       - {label: "发布时间", name: "date", widget: "datetime"}
+
       - {label: "描述", name: "description", widget: "string", required: false}
+
       - label: "分类"
+
         name: "categories"
+
         widget: "select"
+
         options: 
+
           - { label: "技术教程", value: "技术教程" }
+
           - { label: "开发笔记", value: "开发笔记" }
+
           - { label: "项目更新", value: "项目更新" }
+
           - { label: "问题解决", value: "问题解决" }
+
         multiple: false
+
         default: ["技术教程"]
+
       - label: "标签"
+
         name: "tags"
+
         widget: "list"
+
         required: false
+
       - {label: "正文", name: "body", widget: "markdown"}
+
       - {label: "草稿", name: "draft", widget: "boolean", default: true}
+
