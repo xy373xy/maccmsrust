@@ -1,9 +1,15 @@
 
 ---
 
-title: "MacCMS Rust官方网站"
+title: "MacCMS Rust 文档"
 
-type: docs
+type: blog
+
+layout: blog
+
+cascade:
+
+  type: blog
 
 menu:
 
@@ -15,45 +21,29 @@ menu:
 
 
 
-+++
-
-# 首页内容配置
-
-+++
+# 欢迎来到 MacCMS Rust 文档站！
 
 
 
-{{< blocks/cover title="欢迎来到 MacCMS Rust 文档站" image_anchor="top" height="min" color="primary" >}}
-
-这是一个基于 Hugo 和 Netlify CMS 构建的现代化技术文档平台。
-
-{{< /blocks/cover >}}
+这是一个基于 Hugo 和 Docsy 主题构建的技术文档网站。
 
 
 
-{{< blocks/section color="white" >}}
-
-{{% blocks/feature icon="fa-book" title="技术文档" %}}
-
-完整的技术文档和 API 参考
-
-{{% /blocks/feature %}}
+## 快速链接
 
 
 
-{{% blocks/feature icon="fa-blog" title="技术博客" url="/blog/" %}}
+- [技术博客](/blog/) - 查看所有技术文章
 
-最新的技术文章和教程
+- [项目文档](/docs/) - 了解项目详情  
 
-{{% /blocks/feature %}}
+- [社区交流](/community/) - 参与讨论
 
 
 
-{{% blocks/feature icon="fa-users" title="社区" url="/community/" %}}
+## 关于我们
 
-加入我们的技术社区
 
-{{% /blocks/feature %}}
 
-{{< /blocks/section >}}
+这里收录了关于 MacCMS Rust 的技术文档、教程和最佳实践。
 
