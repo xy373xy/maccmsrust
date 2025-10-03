@@ -177,3 +177,16 @@ module:
 
       disable: false
 
+
+
+
+params:
+
+  ui:
+
+    navbar_logo: true
+
+    navbar_display_title: true
+
+    breadcrumb_disable: false
+

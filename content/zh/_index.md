@@ -3,14 +3,6 @@
 
 title: "MacCMS Rust 文档"
 
-type: blog
-
-layout: blog
-
-cascade:
-
-  type: blog
-
 menu:
 
   main:
@@ -29,6 +21,28 @@ menu:
 
 
 
+## 最新文章
+
+
+
+<ul>
+
+{{ range first 5 (where .Site.RegularPages "Section" "blog") }}
+
+  <li>
+
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a> 
+
+    - <small>{{ .Date.Format "2006-01-02" }}</small>
+
+  </li>
+
+{{ end }}
+
+</ul>
+
+
+
 ## 快速链接
 
 
@@ -38,12 +52,4 @@ menu:
 - [项目文档](/docs/) - 了解项目详情  
 
 - [社区交流](/community/) - 参与讨论
-
-
-
-## 关于我们
-
-
-
-这里收录了关于 MacCMS Rust 的技术文档、教程和最佳实践。
 
