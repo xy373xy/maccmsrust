@@ -1,5 +1,4 @@
-# 创建标准的 Docsy 主题首页
-cat > content/zh/_index.md << 'EOF'
+
 ---
 title: "MacCMS Rust 文档"
 menu:
@@ -22,4 +21,4 @@ menu:
 	<p class="lead mt-5">基于 Hugo 和 Docsy 构建的现代化技术文档平台</p>
 </div>
 {{< /blocks/cover >}}
-EOF
+
