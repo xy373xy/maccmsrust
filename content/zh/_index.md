@@ -6,9 +6,6 @@ menu:
     weight: 1
 ---
 
-+++
-# 首页内容配置
-+++
 
 {{< blocks/cover title="MacCMS Rust 文档" image_anchor="top" height="full" color="primary" >}}
 <div class="mx-auto">
